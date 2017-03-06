@@ -1,5 +1,5 @@
 angular
-    // <body ng-app="angularr">
+    // <body ng-app="angular">
     .module("angular", [
 
         // cdnjs from index.html

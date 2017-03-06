@@ -1,4 +1,4 @@
-// routes for dashboard to exend the module
+// links dashboard.controller.js, dashboard.route.js and dashboard.html together
 
 angular
     .module('angular.dashboard',[])
@@ -17,10 +17,11 @@ function dashboardConfig($stateProvider){
         // index.html --> path to --> dashboard.route.js
         templateUrl: '/angular/features/dashboard/dashboard.html', 
 
-         //capital D end in Ctrl
+         //dashboard.controller.js --> .controller('DashboardCtrl', DashboardCtrl)
         controller: 'DashboardCtrl',
 
         //dashboard.html  -->  <h1>{{DashboardVM.foo}}</h1>
+        // foo is from dashboard.controller.js
         controllerAs: 'DashboardVM' 
 
     });
