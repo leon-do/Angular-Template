@@ -14,7 +14,7 @@ function dashboardConfig($stateProvider){
          // localhost:3000/#/
         url: '/',
 
-        // index.html --> path to --> dashboard.route.js
+        // index.html --> path to --> dashboard.html.js
         templateUrl: '/angular/features/dashboard/dashboard.html', 
 
          //dashboard.controller.js --> .controller('DashboardCtrl', DashboardCtrl)
