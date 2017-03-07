@@ -1,28 +1,28 @@
 // links dashboard.controller.js, dashboard.route.js and dashboard.html together
 
 angular
-    .module('angular.dashboard',[])
-    .config(dashboardConfig); //takes a function as a property
+    .module('home.module',[])
+    .config(homeConfig); //takes a function as a property
 
 
-function dashboardConfig($stateProvider){
+function homeConfig($stateProvider){
     $stateProvider.state({
 
         // this can be named whatever
-        name: 'dashboard',
+        name: 'home',
 
          // localhost:3000/#/
         url: '/',
 
         // index.html --> path to --> dashboard.html.js
-        templateUrl: '/angular/features/dashboard/dashboard.html', 
+        templateUrl: '/angular/home/home.html', 
 
          //dashboard.controller.js --> .controller('DashboardCtrl', DashboardCtrl)
-        controller: 'DashboardCtrl',
+        controller: 'HomeCtrl',
 
         //dashboard.html  -->  <h1>{{DashboardVM.foo}}</h1>
         // foo is from dashboard.controller.js
-        controllerAs: 'DashboardVM' 
+        controllerAs: 'HomeVM' 
 
     });
 
